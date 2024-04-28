@@ -21,8 +21,12 @@ httpd.serve_forever()
 
 # Get the value of
 # 'server_hostname' environment variable defined in MyKinsta's Settings -> Environment variables
-server_hostname_var = os.environ.get('server_hostname')
+# server_hostname_var = os.environ.get('server_hostname')
+app_url_var = os.environ.get('APP_URL')
+asset_url_var = os.environ.get('ASSET_URL')
   
 # Print the value of
 # 'server_hostname' environment variable
-print("Server Hostname :", server_hostname_var)
+print("APP_URL :", app_url_var)
+print("ASSET_URL :", asset_url_var)
+# print("Server Hostname :", server_hostname_var)
